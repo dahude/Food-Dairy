@@ -1,0 +1,68 @@
+<!--miniprogram/pages/createRecipe/createRecipe.wxml-->
+<view class='page'>
+  <textarea class='text' bindinput="input"  placeholder="这一刻，想说点什么..." auto-height/>
+  <view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+  <view class="image_content">
+    <view class='image' wx:for="{{img_url}}">
+      <image class="moment_img" src="{{item}}"></image>
+    </view>
+    <view class='image' style='display:{{hideAdd?"none":"block"}}'>
+      <image bindtap="chooseimage" class="moment_img" src='cloud://fooddair-52e7ba.666f-fooddair-52e7ba/按钮图标/add.png'></image>
+    </view>
+  </view>
+  <view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+<label>
+<text style='display:block;padding:5px'>天气</text>
+<div class='img-group'>
+<image class='weather' id='w1' bindtap='selectWeather' src='{{w1_url}}'>
+</image>
+<image class='weather' id='w2' bindtap='selectWeather' src='{{w2_url}}'></image>
+<image class='weather' bindtap='selectWeather' id='w3'src='{{w3_url}}'></image>
+<image class='weather' id='w4' bindtap='selectWeather' src='{{w4_url}}'></image>
+<image class='weather' id='w5' bindtap='selectWeather' src='{{w5_url}}'></image>
+<image class='weather' id='w6' bindtap='selectWeather' src='{{w6_url}}'></image>
+</div>
+</label>
+<label>
+<text style='display:block;padding:5px'>心情</text>
+<div class='img-group'>
+<image class='mood' id='m1' bindtap='selectMood' src='{{m1_url}}'>
+</image>
+<image class='mood' id='m2' bindtap='selectMood' src='{{m2_url}}'></image>
+<image class='mood' bindtap='selectMood' id='m3'src='{{m3_url}}'></image>
+<image class='mood' id='m4' bindtap='selectMood' src='{{m4_url}}'></image>
+</div>
+</label>
+<div style='display:block;padding-bottom:5px'>
+<text style='padding-left:5px'>标题：</text>
+<input style='display:inline-block' bindinput='titleInput'></input>
+</div>
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+<div style='display:block;padding-bottom:5px'>
+<text style='padding-left:5px'>食材：</text>
+<input style='display:inline-block' bindinput='ingredientInput'></input>
+</div>
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+<div style='display:block;padding-bottom:5px'>
+<text style='padding-left:5px'>菜系：</text>
+<input style='display:inline-block' bindinput='cuisineInput'></input>
+</div>
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+  <button bindtap="send" style='margin-top:5px;margin-right:5px;margin-left:5px'>发布</button>
+</view>
+

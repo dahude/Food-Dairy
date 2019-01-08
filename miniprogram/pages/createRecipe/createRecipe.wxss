@@ -1,0 +1,51 @@
+/* miniprogram/pages/createRecipe/createRecipe.wxss */
+.page{
+  padding: 20px
+}
+ 
+.text{
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 13px;
+  padding: 5px
+}
+ 
+.image{
+  width:31%;
+  height: 60px;
+  padding: 2px
+}
+ 
+.moment_img{
+  width: 80px;
+  height: 80px;
+}
+ 
+.image_content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px
+}
+
+/* 横着的分割View样式 */
+/*分割线样式*/
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 5rpx;
+}
+
+.weather{
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  padding-right:5px; 
+}
+
+.mood{
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  padding-right:5px; 
+}

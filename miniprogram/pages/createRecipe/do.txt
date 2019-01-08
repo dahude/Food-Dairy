@@ -1,0 +1,5 @@
+This doc is written to record what I do so that my behavior will not make your PJ terrible.
+Some sign I may use: Modify: # Add: + Delete: -
+
+# app.json to test the createRecipe page（move this page to top）
++ createRecipe to realize the createRecipe page
